@@ -1,3 +1,33 @@
+variable "ami_id" {
+  type    = string
+  default = "ami-0c3389a4fa5bddaad"
+}
+
+variable "instance_type" {
+  type    = string
+  default = "t2.micro"
+}
+
+variable "instance_name" {
+  type    = string
+  default = "Apache_Server"
+}
+
+variable "key_name" {
+  type    = string
+  default = "instance-key-pair"
+}
+
+variable "user_data_file" {
+  type    = string
+  default = "user-data-script.sh"
+}
+
+variable "public_key" {
+  type    = string
+  default = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMY3n5jutcZOccHJXuTPGWJOhin96D4Kqg2WearVtz09 sabah@S"
+}
+
 variable "ssh_desc" {
   type    = string
   default = "SSH"
